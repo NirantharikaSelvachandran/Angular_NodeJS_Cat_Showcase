@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container">
+    <a class="fs-3 navbar-brand text-light mx-auto" >
+      Cat Facts
+    </a>
+  </div>
+</nav>
+
+<!--
+<div class="container mt-3">
+  <div class="row d-flex align-items-stretch">
+    <div *ngFor="let fact of catFacts" class="col-md-6 col-lg-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text"><span>Fact: </span> {{ fact.text }} </p>
+          <p class="card-text"><span>Created At: </span> {{ fact.createdAt | date: 'medium' }}</p>
+          <p class="card-text"><span>Updated At: </span> {{ fact.updatedAt | date: 'medium' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+-->
+
+<div class="container mt-3">
+  <div class="row d-flex align-items-stretch">
+    <div *ngFor="let fact of catFacts" class="col-md-10 mb-3 mx-auto">
+      <div class="card ">
+        <table>
+          <tr>
+            <td><strong><span>Fact: </span></strong></td>
+            <td class="col-md-10">{{ fact.text }}</td>            
+          </tr>
+          <tr>
+            <td><strong><span>Created At: </span></strong></td>
+            <td class="col-md-10">{{ fact.createdAt | date: 'medium' }}</td>
+          </tr>
+          <tr>
+            <td><strong><span>Updated At: </span></strong></td>
+            <td class="col-md-10">{{ fact.updatedAt | date: 'medium' }}</td>            
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

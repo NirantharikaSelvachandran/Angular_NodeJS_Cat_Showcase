@@ -1,0 +1,35 @@
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation: moveFromLeft 4s ease-in-out forwards;
+  }
+  
+  @keyframes moveFromLeft {
+    0% {
+        transform: translateX(-100%); /* Initial position outside of the screen to the left */
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(50%); /* Move to the right during the first half of the animation */
+      }
+      100% {
+        transform: translateX(0%); /* Final position at the center */
+        opacity: 1;
+      }
+}
+
+.card:hover{
+    background-color: rgb(181, 185, 185);
+}
+
+span{
+    color: black;
+    padding: 10px;
+}
+
+td{
+    color: black;
+}
